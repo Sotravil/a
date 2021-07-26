@@ -5,10 +5,10 @@ handler.all = async function (m) {
     this.spam = this.spam ? this.spam : {}
     if (m.sender in this.spam) {
         this.spam[m.sender].count++
-        if (m.messageTimestamp.toNumber() - this.spam[m.sender].lastspam > 10) {
-            if (this.spam[m.sender].count > 10) {
+        if (m.messageTimestamp.toNumber() - this.spam[m.sender].lastspam > 100) {
+            if (this.spam[m.sender].count > 100) {
                 //global.db.data.users[m.sender].banned = true
-                m.reply('*Jangan Spam!!*')
+                m.reply('*Para de spamear!!*')
             }
             this.spam[m.sender].count = 0
             this.spam[m.sender].lastspam = m.messageTimestamp.toNumber()
