@@ -31,18 +31,18 @@ let tags = {
 const defaultMenu = {
   before: `
 ╭─「 %me 」
-│ Hai, %name!
+│ Hola, %name!
 │
-│ Tersisa *%limit Limit*
-│ Role *%role*
-│ Level *%level (%exp / %maxexp)* [%xp4levelup lagi untuk levelup]
+│ Coins *%limit Limit*
+│ Rol *%role*
+│ Nivel *%level (%exp / %maxexp)* [%xp4levelup para siguiente nivel]
 │ %totalexp XP in Total
 │ 
-│ Tanggal: *%week %weton, %date*
-│ Tanggal Islam: *%dateIslamic*
-│ Waktu: *%time*
+│ Fecha: * %date*
+│ 
+│ Hora: *%time*
 │
-│ Uptime: *%uptime (%muptime)*
+│ Actividad: *%uptime (%muptime)*
 │ Database: %rtotalreg of %totalreg
 │ Github:
 │ %github
