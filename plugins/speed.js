@@ -38,23 +38,23 @@ let handler = async (m, { conn }) => {
     }
   })
   let old = performance.now()
-  await m.reply('_Testing speed..._')
+  await m.reply('_Calculando velocidad..._')
   let neww = performance.now()
   let speed = neww - old
   m.reply(`
-Merespon dalam ${speed} millidetik
+Velocidad de ${speed} milisegundos
 
-💬 Status :
+💬 Estado :
 - *${groups.length}* Group Chats
 - *${groupsIn.length}* Groups Joined
 - *${groups.length - groupsIn.length}* Groups Left
 - *${chats.length - groups.length}* Personal Chats
 - *${chats.length}* Total Chats
 
-📱 *Phone Info* :
+📱 *Info Del telefono* :
 ${'```' + `
 🔋 Battery : ${conn.battery ? `${conn.battery.value}% ${conn.battery.live ? '🔌 Charging...' : '⚡ Discharging'}` : 'Unknown'}
-${util.format(conn.user.phone)}
+}
 `.trim() + '```'}
 
 💻 *Server Info* :
